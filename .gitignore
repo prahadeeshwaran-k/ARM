@@ -1,4 +1,6 @@
-# Ignore Keil4 build output files
+# Only ignore Keil4 build artifacts (do NOT block folders or source files)
+
+# Keil generated output
 *.axf
 *.bak
 *.crf
@@ -13,11 +15,9 @@
 *.tra
 *.iex
 
-# Ignore user-specific GUI configuration
+# Ignore Keil GUI session data
 *.uvgui.*
 
-# Optional: ignore Flash Magic or other tool logs
-*.log
-
-# Optional: ignore backup files
+# Optional: editor/backup junk
 *._*
+*.log
