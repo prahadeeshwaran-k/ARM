@@ -1,0 +1,23 @@
+# Ignore Keil4 build output files
+*.axf
+*.bak
+*.crf
+*.d
+*.dep
+*.htm
+*.lnp
+*.lst
+*.map
+*.o
+*.plg
+*.tra
+*.iex
+
+# Ignore user-specific GUI configuration
+*.uvgui.*
+
+# Optional: ignore Flash Magic or other tool logs
+*.log
+
+# Optional: ignore backup files
+*._*
