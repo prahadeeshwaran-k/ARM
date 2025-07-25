@@ -1,11 +1,10 @@
-# ARM
-# ⚙️ LPC21xx ARM7 Microcontroller Projects
+# LPC21xx ARM7 Microcontroller Projects
 
 Welcome to the repository dedicated to hands-on embedded systems development using the **LPC21xx** series microcontrollers based on the **ARM7TDMI-S** core from NXP (formerly Philips).
 
 ---
 
-## 🧠 About LPC21xx Series
+## 🧠 About LPC2129 Series
 
 The **LPC21xx** family is a range of 32-bit ARM7 microcontrollers designed for real-time embedded applications. Known for their balance of performance, memory, and peripheral integration, they are widely used in:
 
