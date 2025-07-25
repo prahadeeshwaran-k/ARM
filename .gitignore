@@ -14,7 +14,9 @@
 *.plg
 *.tra
 *.iex
-
+*.uvopt
+*.uvproj
+*.s
 # Ignore Keil GUI session data
 *.uvgui.*
 
