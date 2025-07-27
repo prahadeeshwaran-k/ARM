@@ -17,7 +17,7 @@ int main(){
 			IOSET0 = (1<<j);//Turning OFF the LED by setting the j-th pin to '1' (active low)
 			delay_ms(500);
 		}
-		delay(1);
+		delay(1); 
 	}
 	return 0;
 }
