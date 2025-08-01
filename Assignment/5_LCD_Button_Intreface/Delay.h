@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 //Delay For Seconds
 void delay(uint32_t sec){
 	T0PR = 15000000 - 1; //Assign The Prescaler Value
