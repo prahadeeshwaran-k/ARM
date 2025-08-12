@@ -15,13 +15,79 @@ The **LPC21xx** family is a range of 32-bit ARM7 microcontrollers designed for r
 
 ### 🔧 Key Features
 
-- ⚙️ **ARM7TDMI-S** 32-bit RISC core  
-- 💾 Up to **256 KB Flash** and **16 KB SRAM**  
-- ⚡ **Fast GPIO** with toggle support  
-- 🔌 Multiple interfaces: **UART, SPI, I2C, CAN**  
-- ⏱️ **Timers**, **PWM**, **RTC**, **Watchdog**  
-- 📊 **10-bit ADC** (varies by model)  
-- 🚀 Runs up to **60 MHz**
+# ⚡ ARM7TDMI-S Based High-Performance 32-bit RISC Microcontroller
+
+## 🧠 Core Architecture
+- 🖥 **ARM7TDMI-S** 32-bit RISC core  
+  - Supports **ARM (32-bit)** and **Thumb (16-bit)** instruction sets for higher code density  
+  - **Three-stage pipeline** for efficient instruction execution  
+  - **Von Neumann architecture** – shared instruction & data bus  
+- ⚡ **CPU clock up to 60 MHz** for high-speed processing  
+- 🔄 **On-chip crystal oscillator** (1 MHz to 25 MHz input range)  
+- ⛓ **On-chip PLL** for frequency multiplication (configurable)  
+
+## 💾 Memory System
+- 📦 **256 KB on-chip Flash ROM**  
+  - 🔧 **In-System Programming (ISP)**: program/update via serial interface without removing from the system  
+  - 🛠 **In-Application Programming (IAP)**: allows firmware updates during runtime  
+- 🗂 **16 KB on-chip SRAM** for data and stack storage  
+- 🚀 **Zero-wait-state** operation for most instructions when running from internal memory  
+
+## 🔔 Interrupt & Control
+- 🎯 **Vectored Interrupt Controller (VIC)**  
+  - Up to **32 interrupt sources**  
+  - Prioritized vectoring for minimal ISR latency  
+- 🕹 **Reset and power management** features for low-power modes  
+
+## 📡 Communication Interfaces
+- 🔌 **Two UARTs** (full-duplex, with FIFO buffers) – supports RS-232, RS-485, IrDA  
+- 🔗 **I²C interface** – supports master and slave modes, up to 400 kHz  
+- 🔄 **Two SPI interfaces** – full-duplex, up to several Mbps, supports master/slave  
+- 📡 **Two CAN channels** – compliant with ISO 11898-1, supports standard & extended frames  
+
+## ⏱ Timers & PWM
+- ⏳ **Two 32-bit timers**  
+  - Each with **capture** and **compare** capabilities  
+  - **7 capture/compare channels** total  
+- 🎵 **PWM unit** – up to **6 independent outputs**  
+  - Useful for motor control, signal generation, dimming control  
+
+## 📊 Analog Features
+- 🎚 **4-channel, 10-bit ADC**  
+  - Supports up to **400 kSamples/s** conversion rate  
+  - Single-ended input mode  
+
+## ⏰ Timekeeping & Safety
+- ⏱ **Real-Time Clock (RTC)**  
+  - Runs on separate 32.768 kHz crystal for accurate timekeeping  
+- 🛡 **Watchdog Timer (WDT)** to reset system on software failure  
+
+## 🔌 General Purpose I/O
+- 🛠 **General-purpose I/O pins** (up to 46)  
+  - Multiple pin functions (GPIO, peripheral control, interrupts)  
+  - Configurable pull-up/pull-down resistors  
+
+---
+
+### 📋 Summary Table
+
+| Feature | Details |
+|---------|---------|
+| **Core** | ARM7TDMI-S, 32-bit RISC with Thumb |
+| **Max Clock** | 60 MHz |
+| **Flash Memory** | 256 KB (ISP, IAP) |
+| **RAM** | 16 KB SRAM |
+| **Timers** | 2 × 32-bit timers (7 capture/compare channels) |
+| **PWM** | Up to 6 outputs |
+| **ADC** | 4 channels, 10-bit |
+| **UART** | 2 ports |
+| **I²C** | 1 port |
+| **SPI** | 2 ports |
+| **CAN** | 2 channels |
+| **RTC** | Yes |
+| **WDT** | Yes |
+| **GPIO** | Up to 46 pins |
+| **Interrupts** | Vectored, up to 32 sources |
 
 ---
 
