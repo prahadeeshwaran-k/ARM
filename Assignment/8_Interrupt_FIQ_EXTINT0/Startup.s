@@ -245,7 +245,7 @@ Vectors         LDR     PC, Reset_Addr
 ;               LDR     PC, IRQ_Addr
                 LDR     PC, [PC, #-0x0FF0]     ; Vector from VicVectAddr
                 LDR     PC, FIQ_Addr
-
+	import FIQ_Handler
 Reset_Addr      DCD     Reset_Handler
 Undef_Addr      DCD     Undef_Handler
 SWI_Addr        DCD     SWI_Handler
@@ -260,8 +260,8 @@ SWI_Handler     B       SWI_Handler
 PAbt_Handler    B       PAbt_Handler
 DAbt_Handler    B       DAbt_Handler
 IRQ_Handler     B       IRQ_Handler
-FIQ_Handler     B       FIQ_Handler
-
+;FIQ_Handler     B       FIQ_Handler
+				;EXTERN FIQ_Handler
 
 ; Reset Handler
 
