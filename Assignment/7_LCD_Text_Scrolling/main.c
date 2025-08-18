@@ -1,28 +1,41 @@
-#include <lpc21xx.h>
-#include "Delay.h"   // Your delay_ms() function
-#include "LCD.h"     // Your LCD init and send functions
-#include <string.h>
+#include <LPC21XX.H>
+#include <stdint.h>
+#include "Delay.h"
+#include "LCD.h"
 
-char msg[] = "Hello Bye Bye Bye ... Bye Bye Bye  "; // Extra spaces for smooth wrap
+int main(void)
+{
+    const char msg[] = "BAD Boy Bala__";
+		unsigned len = 0;
+    unsigned offset = 0;
+    int i, j, k;
+    unsigned char frame[16];
+	
+    LCD_INIT();
+    LCD_COMMAND(0x01);
+    delay_ms(2);
+	
+		while (msg[len] != '\0') { len++; }
+    if (len == 0) { return 0; }
 
-void scroll_text(char *str) {
-    int i, j;
-    int len = strlen(str);
-    
-
-    for (i = 0; i < len; i++) {
-        LCD_COMMAND(0x80); // Move to first line, position 0
-        for (j = 0; j < 16; j++) {
-            LCD_DATA(str[(i + j)%len]); // Print character with wrap-around
+    while(1){
+				for (j = 0; j < 16; j++) {
+            k = (offset + j) % len;//len +8 provide space ;ring = len + 8;
+						if(k < len)
+								frame[j] = msg[k];
+						else
+								frame[j] = ' ';  
         }
-        delay_ms(300); // Delay between shifts
-    }
+				
+        LCD_COMMAND(0x80);
+				
+				for (i = 0; i < 16; i++)
+						LCD_DATA(frame[i]);
+				
+        delay_ms(200);
+        offset++;
+        if (offset == len) { offset = 0; }
+	}
 }
 
-int main(void) {
-    LCD_INIT(); // Initialize LCD
-		scroll_text(msg);
-    while (1) {
-         
-    }
-}
+
