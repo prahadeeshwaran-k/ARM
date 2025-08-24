@@ -1,4 +1,4 @@
-#include <LPC21XX.H>
+/*#include <LPC21XX.H>
 #include <stdint.h>
 #include "Delay.h"
 #include "LCD.h"
@@ -39,3 +39,50 @@ int main(void)
 }
 
 
+*/
+#include <LPC21XX.H>
+#include <stdint.h>
+#include "Delay.h"
+#include "LCD.h"
+
+int main(void)
+{
+    const char msg[] = "BAD Boy Bala__";
+    unsigned len = 0;
+    int offset = 0;
+    int i, j, k;
+    unsigned char frame[16];
+    
+    LCD_INIT();
+    LCD_COMMAND(0x01);  // Clear LCD
+    delay_ms(2);
+    
+    // Find string length
+    while (msg[len] != '\0') { len++; }
+    if (len == 0) { return 0; }
+
+    // Start offset from the last character (for right scroll)
+    offset = len - 1;
+
+    while(1) {
+        for (j = 0; j < 16; j++) {
+            // move in reverse direction
+            k = (offset + j) % len; 
+            if (k < len)
+                frame[j] = msg[k];
+            else
+                frame[j] = ' ';
+        }
+
+        LCD_COMMAND(0x80); // Move cursor to first line, position 0
+        
+        for (i = 0; i < 16; i++)
+            LCD_DATA(frame[i]);
+
+        delay_ms(200);
+
+        // Decrement offset for rightward scroll
+        offset--;
+        if (offset < 0) { offset = len - 1; }
+    }
+}
