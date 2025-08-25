@@ -9,7 +9,7 @@ int main(void)
     initUART0();
 		LCD_INIT();
 
-    printf("LPC2129 UART0 printf/scanf demo\n");
+    printf("LPC2129 UART0 Assignment 2");
 		LCD_COMMAND(0x80);
 		LCDPrintString("OppositeCase:");
     while(1)
