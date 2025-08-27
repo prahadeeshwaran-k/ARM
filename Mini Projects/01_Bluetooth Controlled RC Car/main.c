@@ -8,13 +8,13 @@
 ================================================================ */
 
 /* ================== Motor Direction Operation ==================
-| Direction | Operation | Motor1 | Motor2 |
-|-----------|------------|--------|--------|
-| Forward   | F          |   1    |   1    |
-| Backward  | B          |   2    |   2    |
-| Stop      | S          |   0    |   0    |
-| Left      | L          |   0    |   1    |
-| Right     | R          |   1    |   0    |
+| Direction | Operation | Motor1      | Motor2      | IN1 | IN2 | IN3 | IN4 |
+|-----------|------------|-------------|-------------|-----|-----|-----|-----|
+| Forward   | F          | Forward(1)  | Forward(1)  |  1  |  0  |  1  |  0 |
+| Backward  | B          | Backward(2) | Backward(2) |  0  |  1  |  0  |  1 |
+| Stop      | S          | Stop(0)     | Stop(0)     |  0  |  0  |  0  |  0 |
+| Left      | L          | Stop(0)     | Forward(1)  |  0  |  0  |  1  |  0 |
+| Right     | R          | Forward(1)  | Stop(0)     |  1  |  0  |  0  |  0 |
 ================================================================ */
 
 #include<LPC21XX.H>
@@ -54,7 +54,7 @@ int main()
 	
 	State(STOP,IN1,IN2); //Motor 1 -> Stop
 	State(STOP,IN3,IN4); //Motor 2 -> Stop
-	IODIR0 |= (IN1 | IN2 | IN3 | IN4);  // set motor pins as output
+	IODIR0 |= (IN1 | IN2 | IN3 | IN4); // set motor pins as output
 	
 	UART0_CONFIG();
 	
