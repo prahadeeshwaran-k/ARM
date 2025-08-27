@@ -5,7 +5,7 @@ Commands are sent from a PC (via UART) to control two motors connected through a
 
 ---
 
-## ?? Features
+## 🛠 Features
 - UART0 interrupt-based command reception  
 - Controls two motors independently  
 - Supports **Forward, Backward, Stop, Left, Right** operations  
@@ -13,7 +13,7 @@ Commands are sent from a PC (via UART) to control two motors connected through a
 
 ---
 
-## ?? Motor Control Truth Table
+## 📜 Motor Control Truth Table
 
 ### Motor Input Control Table
 | IN1 | IN2 | IN3 | IN4 | Spinning Direction | Char |
@@ -26,7 +26,7 @@ Commands are sent from a PC (via UART) to control two motors connected through a
 
 ---
 
-## ?? Commands
+## 🎮 Commands
 
 Send one character over UART to control the robot:
 
@@ -40,7 +40,7 @@ Send one character over UART to control the robot:
 
 ---
 
-## ?? Hardware Setup
+## 🔧 Hardware Setup
 - **MCU**: LPC21xx (tested on LPC2129 / LPC2148)  
 - **Driver IC**: L293D / L298N (H-Bridge)  
 - **Motors**: 2 DC Motors  
@@ -56,13 +56,13 @@ Send one character over UART to control the robot:
 
 ---
 
-## ?? Files
-- `main.c` ? Motor control + UART ISR logic  
-- `UART.h` ? UART initialization functions  
+## 📂 Files
+- `main.c` → Motor control + UART ISR logic  
+- `UART.h` → UART initialization functions  
 
 ---
 
-## ?? How to Run
+## ▶️ How to Run
 1. Flash the code to LPC21xx using Keil/FlashMagic.  
 2. Connect UART0 to PC (baudrate: **9600 8N1**).  
 3. Open Serial Terminal (e.g., PuTTY, TeraTerm).  
@@ -71,17 +71,17 @@ Send one character over UART to control the robot:
 
 ---
 
-## ?? Notes
+## ⚠️ Notes
 - Unknown characters default to **Stop** for safety.  
 - Ensure external motor supply voltage matches motor rating.  
 - Swap IN1/IN2 or IN3/IN4 if motor spins in the wrong direction.  
 
 ---
 
-## ?? Demo
+## 📸 Demo
 (You can add wiring diagram or test GIF here)
 
 ---
 
-## ?? Author
-Developed by **Prahadeeshwaran K** ??  
+## ✍️ Author
+Developed by **Prahadeeshwaran K** 🚀  
