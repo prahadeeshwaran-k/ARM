@@ -3,8 +3,7 @@
 #include<stdio.h>
 
 void UART0_CONFIG(){
-	//|DLAB |SetBreak|stickparity|eventparselect|parityenable|noofstopbit|wordlenght|select |
-	U0LCR= 1<<7 | 3<<0; //0x83 to turn on the 7bit
+	U0LCR= 	0X83; //0x83 to turn on the 7bit
 	U0DLL = 0X97;
 	U0DLM = 0;
 	U0LCR = 0X03;
@@ -42,9 +41,11 @@ void SeiralGets(char *buffer){
 }
 
 void SerialPrint(const char *p,...){
+	
 	int i,val;
 	float f;
 	char ch,buffer[20];
+	
 	va_list ap;
 	va_start(ap,p);
 	for(i = 0 ;p[i];i++){
@@ -78,6 +79,7 @@ int main(){
     char ch;
     char buffer[256];
     PINSEL0 = 0X05;
+		//VPBDIV = 0x04;
     UART0_CONFIG();
 
     UART0_TX_DATA('A');
