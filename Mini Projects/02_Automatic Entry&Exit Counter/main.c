@@ -31,24 +31,22 @@ void Non_Vectored_Isr(void)__irq {
 	// For Out -> In
 	case (1 << EXT_INT0):
 		EXTINT = 0x01;      // clear EINT0
-		if((directionFlag1!)) { //when directionFlag1 = 0 means it occurs 1st
+		if(directionFlag1== 0) { //when directionFlag1 = 0 means it occurs 1st
 			sensorFlag1[0] = 1;
 			directionFlag1 = 1;
 		} else {
 			sensorFlag1[0] = 0;
-			//directionFlag1 = 0;
 		}
 		CountFlag1[0] = 1;
 		break;
 	// For In -> Out
 	case (1 << EXT_INT3):
 		EXTINT = 0x08;      // clear EINT3
-		if((directionFlag1!)) { //when directionFlag1 = 0 means it occurs 1st
+		if(directionFlag1 == 0) { //when directionFlag1 = 0 means it occurs 1st
 			sensorFlag1[1] = 1;
 			directionFlag1 = 1;
 		} else {
 			sensorFlag1[1] = 0;
-			//directionFlag1 = 0;
 		}
 		CountFlag1[1] = 1;
 		break;
