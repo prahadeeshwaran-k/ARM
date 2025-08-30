@@ -1,46 +1,37 @@
-#include <stdio.h>
+void UART0_CONFIG(void);
+void UART0_TX(unsigned char);
+unsigned char UART0_RX(void);
 
-void initUART0(void)
+void UART0_STR(unsigned char *);
+
+void UART0_CONFIG(void)
 {
-    PINSEL0 |= 0x00000005;   // Enable TxD0 (P0.0) and RxD0 (P0.1)
-
-    U0LCR= 1<<7 | 3<<0; //0x83 to turn on the 7bit
-		U0DLL = 0X97;
-		U0DLM = 0;
-		U0LCR = 0X03;
+  PINSEL0 |= 0X5;//P0.0 as TXD0 and P0.1 as RXD0
+  U0LCR = 0X83;
+  U0DLL = 97;
+  U0DLM = 0;
+  U0LCR = 0X03;	
 }
 
-
-void uartWrite(char c)
+void UART0_TX(unsigned char dat)
 {
-    while(!(U0LSR & (1<<5)));   // Wait for THR empty
-    U0THR = c;
+ while(((U0LSR>>5)&1)==0);
+ U0THR = dat;	
 }
 
-char uartRead(void)
+unsigned char UART0_RX(void)
 {
-    while(!(U0LSR & (1<<0)));   // Wait for RDR = 1
-    return U0RBR;
+  while((U0LSR&1)==0);
+ 	return U0RBR;
 }
 
+void UART0_STR(unsigned char *s)
 
-//OverRide The built in c function
-struct __FILE { int handle; };
-FILE __stdout;
-FILE __stdin;
-
-int fputc(int c, FILE *stream)
 {
-    if(c == '\n') {
-        uartWrite('\r');   // add CR before LF
-    }
-    uartWrite(c);
-    return c;
+
+  while(*s)
+
+   UART0_TX(*s++);		
+
 }
 
-int fgetc(FILE *stream)
-{
-    char c = uartRead();
-    uartWrite(c);  // echo back
-    return c;
-}

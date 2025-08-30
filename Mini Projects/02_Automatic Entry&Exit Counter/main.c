@@ -1,6 +1,8 @@
 #include<LPC21XX.H>
+
 #include"Delay.h"
 #include"UART.h"
+#include"LCD8Bit.h"
 
 #define EXT_INT0 14
 #define EXT_INT1 15
@@ -101,14 +103,14 @@ int main() {
 			if(sensorFlag1[0]){
 				Humans++;
 				UART0_STR("in door 1 +One Person Entered: TotalPersons ");
-				UART0_TX(Humans);
+				UART0_Digit(Humans);
 				UART0_STR("\r\n");
 			}
 
 			if(sensorFlag1[1]){
-				if(humans>0){Humans--}
+				if(Humans>0){Humans--;}
 				UART0_STR("in door 1 -One Person Exited: TotalPersons ");
-				UART0_TX(Humans);
+				UART0_Digit(Humans);
 				UART0_STR("\r\n");
 			}
 
@@ -124,14 +126,14 @@ int main() {
 			if(sensorFlag2[0]){
 				Humans++;
 				UART0_STR("+One Person Entered: TotalPersons ");
-				UART0_TX(Humans);
+				UART0_Digit(Humans);
 				UART0_STR("\r\n");
 				}
 			
 			if(sensorFlag2[1]){
-				if(humans>0){Humans--}
+				if(Humans>0){Humans--;}
 				UART0_STR("- One Person Exited: TotalPersons ");
-				UART0_TX(Humans);
+				UART0_Digit(Humans);
 				UART0_STR("\r\n");
 				}
 
