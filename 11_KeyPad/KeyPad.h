@@ -17,15 +17,19 @@ unsigned int keypad_lut[4][4]={
 	{13,14,15,16}
 };
 
+
 unsigned int keyScan(void){
 	unsigned char row,col;
 	PINSEL2 = 0;
 	IODIR1 = R0 | R1 | R2 | R3 ;//SET Direction Rows as Output.
 
 	while(1){
+		//Step 1 set all the pins as LOW in ROW
+		//Step 2 clear all the pins as HIGH in Coloum
 		IOCLR1 = R0 | R1 | R2 | R3 ;
 		IOSET1 = C0 | C1 |C2 | C3 ;
-
+		
+		//Wait untill a Button is pressed
 		while((C0 && C1 && C2 && C3) == 1);
 
 		//For ROW 0
