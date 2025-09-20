@@ -57,8 +57,6 @@ int main(){
    
     PINSEL0 = 0X05;
     UART0_CONFIG();
-
-
     while(1);
 }
 
