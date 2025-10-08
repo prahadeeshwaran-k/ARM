@@ -32,6 +32,7 @@ void SeiralPuts(const char *str){
 }
 
 // ================= Receive string (with echo) =================
+<<<<<<< HEAD
 // ================= Receive string (with echo) =================
 void SerialGets(char *buffer){
     int i = 0;
@@ -44,11 +45,24 @@ void SerialGets(char *buffer){
             break;
         } else {
             buffer[i++] = c;             // Store char and move forward
+=======
+void SeiralGets(char *buffer){
+    int i = 0;
+    while(i < 256){                      // Limit to 256 chars
+        buffer[i] = UART0_RX_DATA();     // Read a char from UART
+        UART0_TX_DATA(buffer[i]);        // Echo back the received char
+        if(buffer[i] == '\n'){           // If Enter (newline) is pressed
+            buffer[i] = '\0';            // Replace newline with string terminator
+            break;                       // Exit loop
+>>>>>>> origin/main
         }
     }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 // ================= Custom printf-like function =================
 // Supports %d, %c, %f, %s for serial output
 void SerialPrint(const char *p,...){
