@@ -1,3 +1,4 @@
+#include<stdio.h>
 void UART0_CONFIG(void);
 void UART0_TX(unsigned char);
 unsigned char UART0_RX(void);
@@ -31,3 +32,9 @@ void UART0_STR(unsigned char *s)
   UART0_TX(*s++);		
 }
 
+void UART0_Float(float num)
+{
+    char buffer[10]; 
+    sprintf(buffer, "%.2f", num);
+    UART0_STR((unsigned char *)buffer);
+}

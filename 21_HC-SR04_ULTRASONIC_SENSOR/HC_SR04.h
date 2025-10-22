@@ -8,6 +8,6 @@
 
 void HCSR04_INIT(void);
 void Pulse(void);
-unsigned int Range(void);
+float Range(void);
 
 #endif // __HCSR04_H__
