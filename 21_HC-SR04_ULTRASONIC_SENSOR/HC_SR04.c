@@ -1,9 +1,8 @@
-#include "HCSR04.h"
+#include "HC_SR04.h"
 
 void HCSR04_INIT(void)
 {
-    IO0DIR |= TRIG_PIN;   
-    T1PR = 60-1;           
+    IO0DIR |= TRIG_PIN; 
 }
 
 void Pulse(void)
@@ -19,26 +18,29 @@ void Pulse(void)
     IO0CLR = TRIG_PIN;
 }
 
-unsigned int Range(void)
+float Range(void)
 {
-    unsigned int get = 0;
+    float distance;
+    unsigned int timer_value = 0;
 
-    HCSR04_Pulse();
+    Pulse(); 
+	
     while (!ECHO_PIN);
 
-    T0TCR = 0x02;  // Reset timer
-    T0TCR = 0x01;  // Start timer
+    T0TCR = 0x02; // Reset timer
+    T0TCR = 0x01; // Start timer
 
     while (ECHO_PIN);
 
-    T0TCR = 0x00;
-    get = T0TC; 
+    T0TCR = 0x00; 
+    timer_value = T0TC;
 
-    // Convert pulse duration to cm
-    if (get < 38000) // 1 cm 58 ~ 59 s so max is 6.5 meter.
-        get = (0.0343 * get)/2;  
+    // 1 cm 58 ~ 59 s so max is 6.5 meter
+    // Check for timeout (38ms = ~max range)
+    if (timer_value < 38000) 
+        distance = (timer_value * 0.0343) / 2.0;
     else
-        get = 0;         // Out of range or timeout
+        distance = -1.0; // Return -1 or 0 to indicate "Out of Range"
 
-    return get;
+    return distance;
 }
