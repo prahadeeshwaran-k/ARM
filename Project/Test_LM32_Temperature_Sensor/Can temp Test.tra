@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'Can temp Test.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"mcp3204.o"'
+### List of Objects: adding '"spi.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "main.o" "mcp3204.o" "spi.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x40000000 --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Can temp Test.map" -o "Can temp Test.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'Can temp Test.axf'
+### ADS-LD Command File: 'Can temp Test.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'Can temp Test.lnp', Handle=0x00000D90
+### Writing '.lnp' file
+### ADS-LD Command file 'Can temp Test.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,452 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\praha\MEGA\ARM\23_PWM\PWM.uvproj
+Project File Date:  10/31/2025
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+linking...
+Program Size: Code=980 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=980 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1044 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1044 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1044 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1044 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1084 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1084 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(81): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(7): error:  #5: cannot open source input file "LP21XX.H": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(7): error:  #5: cannot open source input file "LP21XX.H": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(7): error:  #5: cannot open source input file "LP21XX.H": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(80): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(80): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(80): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(80): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(80): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(14): warning:  #260-D: explicit type is missing ("int" assumed)
+main.c(14): error:  #65: expected a ";"
+main.c(41): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(43): error:  #40: expected an identifier
+main.c(43): error:  #18: expected a ")"
+main.c(43): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(44): error:  #40: expected an identifier
+main.c(44): error:  #18: expected a ")"
+main.c(44): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(45): error:  #40: expected an identifier
+main.c(45): error:  #18: expected a ")"
+main.c(45): error:  #144: a value of type "unsigned int" cannot be used to initialize an entity of type "int *"
+main.c(51): error:  #169: expected a declaration
+main.c(73): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(74): error:  #169: expected a declaration
+main.c(77): warning:  #12-D: parsing restarts here after previous syntax error
+main.c(78): error:  #169: expected a declaration
+main.c(80): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c(7): warning:  #177-D: function "delay_ms" was declared but never referenced
+main.c(14): warning:  #177-D: variable "inline" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(48): error:  #268: declaration may not appear after executable statement in block
+main.c(49): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(48): error:  #268: declaration may not appear after executable statement in block
+main.c(49): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(48): error:  #268: declaration may not appear after executable statement in block
+main.c(49): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(48): error:  #268: declaration may not appear after executable statement in block
+main.c(49): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(48): error:  #268: declaration may not appear after executable statement in block
+main.c(49): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(48): error:  #268: declaration may not appear after executable statement in block
+main.c(49): error:  #268: declaration may not appear after executable statement in block
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1152 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1152 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1152 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1152 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1140 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1184 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(72): error:  #20: identifier "duty" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(72): error:  #20: identifier "duty" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1176 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1176 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1176 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1240 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1240 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1240 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1240 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1256 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(73): error:  #20: identifier "inc_button_flag" is undefined
+main.c(76): error:  #20: identifier "inc_button_flag" is undefined
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(73): error:  #20: identifier "inc_button_flag" is undefined
+main.c(76): error:  #20: identifier "inc_button_flag" is undefined
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1212 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(42): warning:  #177-D: variable "inc_button_flag" was declared but never referenced
+linking...
+Program Size: Code=1256 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+main.c(42): warning:  #177-D: variable "inc_button_flag" was declared but never referenced
+linking...
+Program Size: Code=1256 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=1172 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1172 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"PWM.axf" - 0 Error(s), 0 Warning(s).

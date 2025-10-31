@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\praha\MEGA\ARM\17_SPI_Communication\SPI.uvproj
+Project File Date:  10/27/2025
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling MCP3204.c...
+compiling SPI.c...
+linking...
+Program Size: Code=9544 RO-data=212 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"SPI.axf" - 0 Error(s), 0 Warning(s).
+"LPC210x_ISP.EXE" "C:\Users\praha\MEGA\ARM\17_SPI_Communication\SPI.HEX" 12000 LPC2129 COM1: 9600 1
+--- Error: failed to execute '"LPC210x_ISP.EXE" "C:\Users\praha\MEGA\ARM\17_SPI_Communication\SPI.HEX" 12000 LPC2129 COM1: 9600 1'

@@ -1,0 +1,10 @@
+main.o: main.c
+main.o: C:\Keil4\ARM\Inc\Philips\LPC21xx.h
+main.o: Delay.h
+main.o: C:\Keil4\ARM\RV31\Inc\stdint.h
+main.o: SPI.h
+main.o: MCP3204.h
+main.o: LCD8Bit.h
+main.o: C:\Keil4\ARM\RV31\Inc\stdio.h
+main.o: uart.h
+main.o: C:\Keil4\ARM\RV31\Inc\math.h

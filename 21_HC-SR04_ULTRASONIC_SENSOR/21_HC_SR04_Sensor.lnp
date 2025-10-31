@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "hc_sr04.o" "main.o" --strict --scatter "21_HC_SR04_Sensor.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\21_HC_SR04_Sensor.map" -o 21_HC_SR04_Sensor.axf
