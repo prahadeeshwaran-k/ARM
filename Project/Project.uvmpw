@@ -9,12 +9,22 @@
 
   <project>
     <PathAndName>.\NodeA\NodeA.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
   <project>
     <PathAndName>.\NodeB\NodeB.uvproj</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
+  </project>
+
+  <project>
+    <PathAndName>.\NodeC\NodeC.uvproj</PathAndName>
+    <NodeIsExpanded>1</NodeIsExpanded>
+  </project>
+
+  <project>
+    <PathAndName>.\NodeD\NodeD.uvproj</PathAndName>
     <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 

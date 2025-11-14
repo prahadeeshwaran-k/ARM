@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#define LCD_DATA_PIN 0XFF<<8
-#define LCD_ENABLE 1<<17
-#define LCD_REGISTER 1<<16
+#define LCD_DATA_PIN 0XFF
+#define LCD_ENABLE 1<<8
+#define LCD_REGISTER 1<< 9
 
 void LCD_INIT(void);
 void LCD_COMMAND(unsigned char);
@@ -21,7 +21,7 @@ void LCD_INIT(void){
 
 void LCD_COMMAND(unsigned char CMD){
 	IOCLR0 = LCD_DATA_PIN;
-	IOSET0 = CMD<<8;
+	IOSET0 = CMD
 	IOCLR0 = LCD_REGISTER;
 	IOSET0 = LCD_ENABLE;
 	delay_ms(2);
@@ -30,7 +30,7 @@ void LCD_COMMAND(unsigned char CMD){
 
 void LCD_DATA(unsigned char DATA){
 	IOCLR0 = LCD_DATA_PIN;
-	IOSET0 = DATA<<8;
+	IOSET0 = DATA
 	IOSET0 = LCD_REGISTER;
 	IOSET0 = LCD_ENABLE;
 	delay_ms(2);

@@ -425,6 +425,11 @@
               <FileType>1</FileType>
               <FilePath>.\UART.c</FilePath>
             </File>
+            <File>
+              <FileName>LCD8Bit.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LCD8Bit.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

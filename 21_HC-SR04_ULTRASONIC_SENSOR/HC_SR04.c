@@ -9,18 +9,13 @@ void Pulse(void)
 {
     
     IO0SET = TRIG_PIN;
-	
-    T0TCR = 0x02; //Reset Timer
-	T0TCR = 0x01; //Enable timer
-	while(T0TC < 10); //wait until timer counter reaches the desired delay
-	T0TCR = 0x00; //Disable timer
-	
+	delay_micro(10);
     IO0CLR = TRIG_PIN;
 }
 
-float Range(void)
+int Range(void)
 {
-    float distance;
+    int distance;
     unsigned int timer_value = 0;
 
     Pulse(); 

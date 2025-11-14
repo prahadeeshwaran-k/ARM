@@ -1,0 +1,6 @@
+Dependencies for Project 'NodeC', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4BB1C206)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\KeilARM\ARM\INC" -I "C:\KeilARM\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o" --depend "Startup.d")
+F (.\Main.c)(0x690D8982)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I "C:\KeilARM\ARM\INC" -I "C:\KeilARM\ARM\INC\Philips" -o "main.o" --omf_browse "main.crf" --depend "main.d")
+F (.\can2.h)(0x690846FD)()
+F (.\uart.h)(0x690B1021)()
+F (.\Delay.h)(0x690C394C)()

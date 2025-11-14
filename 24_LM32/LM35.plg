@@ -1,0 +1,188 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\praha\MEGA\ARM\24_LM32\LM35.uvproj
+Project File Date:  11/12/2025
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling mainnew.c...
+mainnew.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling mcp3204.c...
+mcp3204.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling spi.c...
+spi.c(4): error:  #5: cannot open source input file "pin_function_defines.h": No such file or directory
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling mainnew.c...
+mainnew.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling mcp3204.c...
+mcp3204.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling spi.c...
+spi.c(4): error:  #5: cannot open source input file "pin_function_defines.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(56): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(63): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(81): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(93): warning:  #550-D: variable "stat" was set but never used
+mainnew.c(129): warning:  #223-D: function "str" declared implicitly
+mainnew.c(135): warning:  #223-D: function "lcd_cmd" declared implicitly
+mainnew.c(138): warning:  #223-D: function "delay_milliseconds" declared implicitly
+compiling mcp3204.c...
+mcp3204.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling spi.c...
+spi.c(4): error:  #5: cannot open source input file "pin_function_defines.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling mcp3204.c...
+mcp3204.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling spi.c...
+spi.c(4): error:  #5: cannot open source input file "pin_function_defines.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling mcp3204.c...
+mcp3204.c(4): error:  #5: cannot open source input file "spi.h": No such file or directory
+compiling spi.c...
+spi.c(4): error:  #5: cannot open source input file "pin_function_defines.h": No such file or directory
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling mainnew.c...
+mainnew.c(56): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(63): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(81): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(93): warning:  #550-D: variable "stat" was set but never used
+mainnew.c(129): warning:  #223-D: function "str" declared implicitly
+mainnew.c(135): warning:  #223-D: function "lcd_cmd" declared implicitly
+mainnew.c(138): warning:  #223-D: function "delay_milliseconds" declared implicitly
+linking...
+LM35.axf: Error: L6218E: Undefined symbol delay_milliseconds (referred from mainnew.o).
+LM35.axf: Error: L6218E: Undefined symbol lcd_cmd (referred from mainnew.o).
+LM35.axf: Error: L6218E: Undefined symbol str (referred from mainnew.o).
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling mainnew.c...
+mainnew.c(12): error:  #20: identifier "uint32_t" is undefined
+mainnew.c(21): error:  #20: identifier "uint32_t" is undefined
+mainnew.c(30): error:  #20: identifier "uint32_t" is undefined
+mainnew.c(83): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(90): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(108): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(120): warning:  #550-D: variable "stat" was set but never used
+mainnew.c(156): warning:  #223-D: function "str" declared implicitly
+mainnew.c(162): warning:  #223-D: function "lcd_cmd" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(83): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(90): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(108): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(120): warning:  #550-D: variable "stat" was set but never used
+mainnew.c(156): warning:  #223-D: function "str" declared implicitly
+mainnew.c(162): warning:  #223-D: function "lcd_cmd" declared implicitly
+linking...
+LM35.axf: Error: L6218E: Undefined symbol lcd_cmd (referred from mainnew.o).
+LM35.axf: Error: L6218E: Undefined symbol str (referred from mainnew.o).
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(83): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(90): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(108): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(120): warning:  #550-D: variable "stat" was set but never used
+linking...
+Program Size: Code=5160 RO-data=56 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"LM35.axf" - 0 Error(s), 4 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling mainnew.c...
+mainnew.c(113): warning:  #223-D: function "sprintf" declared implicitly
+mainnew.c(131): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(143): warning:  #550-D: variable "stat" was set but never used
+linking...
+Program Size: Code=5484 RO-data=56 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"LM35.axf" - 0 Error(s), 3 Warning(s).
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(130): error:  #29: expected an expression
+mainnew.c(130): error:  #20: identifier "j" is undefined
+mainnew.c(150): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(162): warning:  #550-D: variable "stat" was set but never used
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(130): error:  #29: expected an expression
+mainnew.c(130): error:  #20: identifier "j" is undefined
+mainnew.c(150): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(162): warning:  #550-D: variable "stat" was set but never used
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(130): error:  #29: expected an expression
+mainnew.c(130): error:  #20: identifier "j" is undefined
+mainnew.c(150): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(162): warning:  #550-D: variable "stat" was set but never used
+mainnew.c(186): error:  #10: "#" not expected here
+mainnew.c(186): error:  #29: expected an expression
+mainnew.c(189): error:  #268: declaration may not appear after executable statement in block
+mainnew.c(189): warning:  #940-D: missing return statement at end of non-void function "Read_ADC_MCP3204"
+mainnew.c(174): warning:  #550-D: variable "hByte" was set but never used
+mainnew.c(174): warning:  #550-D: variable "lByte" was set but never used
+mainnew.c(175): warning:  #177-D: variable "adcVal" was declared but never referenced
+mainnew.c(189): error:  #67: expected a "}"
+mainnew.c(198): error:  #247: function "delay" has already been defined
+mainnew.c(208): error:  #247: function "delay_ms" has already been defined
+mainnew.c(218): error:  #247: function "delay_micro" has already been defined
+mainnew.c(238): error:  #247: function "uart0_init" has already been defined
+mainnew.c(249): error:  #247: function "uart0_tx" has already been defined
+mainnew.c(255): error:  #247: function "uart0_tx_string" has already been defined
+mainnew.c(261): error:  #247: function "uart0_tx_integer" has already been defined
+mainnew.c(286): error:  #247: function "uart0_tx_hex" has already been defined
+mainnew.c(302): error:  #29: expected an expression
+mainnew.c(302): error:  #20: identifier "j" is undefined
+mainnew.c(306): error:  #247: function "uart0_tx_float" has already been defined
+mainnew.c(318): error:  #247: function "Init_SPI0" has already been defined
+mainnew.c(323): warning:  #69-D: integer conversion resulted in truncation
+mainnew.c(327): error:  #247: function "SPI0" has already been defined
+mainnew.c(335): error:  #247: function "Read_ADC_MCP3204" has already been defined
+mainnew.c(372): error:  #77-D: this declaration has no storage class or type specifier
+mainnew.c(372): error:  #20: identifier "hByte" is undefined
+mainnew.c(372): error:  #20: identifier "lByte" is undefined
+mainnew.c(373): error:  #169: expected a declaration
+mainnew.c(374): error:  #169: expected a declaration
+mainnew.c(393): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(117): error:  #29: expected an expression
+mainnew.c(117): error:  #20: identifier "j" is undefined
+mainnew.c(138): warning:  #69-D: integer conversion resulted in truncation
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(117): error:  #29: expected an expression
+mainnew.c(117): error:  #20: identifier "j" is undefined
+mainnew.c(138): warning:  #69-D: integer conversion resulted in truncation
+Target not created
+Build target 'Target 1'
+compiling mainnew.c...
+mainnew.c(139): warning:  #69-D: integer conversion resulted in truncation
+linking...
+Program Size: Code=5148 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"LM35.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling mainnew.c...
+linking...
+Program Size: Code=5148 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"LM35.axf" - 0 Error(s), 0 Warning(s).

@@ -1,8 +1,6 @@
 main.o: Main.c
-main.o: C:\Keil4\ARM\Inc\Philips\LPC21XX.H
-main.o: Delay.h
-main.o: C:\Keil4\ARM\RV31\Inc\stdint.h
-main.o: UART.h
-main.o: CAN.h
-main.o: LCD8Bit.h
-main.o: C:\Keil4\ARM\RV31\Inc\stdio.h
+main.o: C:\KeilARM\ARM\INC\Philips\LPC21xx.H
+main.o: C:\KeilARM\ARM\RV31\INC\stdint.h
+main.o: C:\KeilARM\ARM\RV31\INC\stdio.h
+main.o: uart.h
+main.o: timer.h

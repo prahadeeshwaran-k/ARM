@@ -1,24 +1,24 @@
 # Only ignore Keil4 build artifacts (do NOT block folders or source files)
 
 # Keil generated output
-*.axf
-*.bak
-*.crf
-*.d
-*.dep
-*.htm
-*.lnp
-*.lst
-*.map
-*.o
-*.plg
-*.tra
-*.iex
-*.uvopt
-*.uvproj
-*.s
+# *.axf
+# *.bak
+#*.crf
+#*.d
+#*.dep
+#*.htm
+#*.lnp
+#*.lst
+#*.map
+#*.o
+#*.plg
+#*.tra
+#*.iex
+#*.uvopt
+#*.uvproj
+# *.s
 # Ignore Keil GUI session data
-*.uvgui.*
+#*.uvgui.*
 
 # Optional: editor/backup junk
 *._*

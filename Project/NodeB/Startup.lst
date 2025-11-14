@@ -659,8 +659,8 @@ ARM Macro Assembler    Page 11
               00000400 
               00000000 
 Command Line: --debug --xref --apcs=interwork --depend=Startup.d -oStartup.o -I
-C:\Keil4\ARM\RV31\Inc -IC:\Keil4\ARM\CMSIS\Include -IC:\Keil4\ARM\Inc\Philips -
--predefine="__EVAL SETA 1" --list=Startup.lst Startup.s
+C:\KeilARM\ARM\INC -IC:\KeilARM\ARM\INC\Philips --predefine="__EVAL SETA 1" --l
+ist=Startup.lst Startup.s
 
 
 
@@ -1459,4 +1459,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 2 symbols
-429 symbols in table
+423 symbols in table
